@@ -1,15 +1,7 @@
 import React, { useRef, useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import emailjs from '@emailjs/browser';
-import { DialogContent, DialogActions, Button, TextField, DialogContentText, Typography } from '@mui/material';
-
-const Result = () => {
-	return (
-		<Typography>
-			Thank you for reaching out! I look forward to speaking with you soon.
-		</Typography>
-	);
-};
+import { DialogContent, DialogActions, Button, TextField, DialogContentText } from '@mui/material';
 
 export default function EmailSend({ handleClose, showResult }) {
 	const form = useRef();

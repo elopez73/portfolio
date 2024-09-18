@@ -9,6 +9,9 @@ export default function InfoWithIcons({ items }) {
     const scrollTimeoutRef = useRef(null);
 
     useEffect(() => {
+        // Store the initial reference to the element in a variable
+        const currentRef = containerRef.current;
+
         // Set up the IntersectionObserver
         const observer = new IntersectionObserver(
             ([entry]) => {
@@ -20,16 +23,19 @@ export default function InfoWithIcons({ items }) {
             }
         );
 
-        if (containerRef.current) {
-            observer.observe(containerRef.current);
+        // Observe the current reference
+        if (currentRef) {
+            observer.observe(currentRef);
         }
 
         return () => {
-            if (containerRef.current) {
-                observer.unobserve(containerRef.current);
+            // Unobserve the stored reference
+            if (currentRef) {
+                observer.unobserve(currentRef);
             }
         };
     }, []);
+
 
     useEffect(() => {
         // Handler for scroll event
