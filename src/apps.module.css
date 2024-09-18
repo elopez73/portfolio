@@ -1,0 +1,16 @@
+.app  {
+	display: flex;
+	height: 100svh;
+	flex-direction: column;
+	scroll-behavior: smooth;
+}
+.bg {
+	padding: 0;
+	position: fixed;
+	height: 100vh;
+	max-width: 100svw;
+	top: 0;
+	left: 0;
+	opacity: 0.2;
+	z-index: -1;
+}
