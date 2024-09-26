@@ -16,7 +16,6 @@ function App() {
 
 	return (<NavProvider>
 		<div className={classes.app} >
-
 			<img src={BG} className={classes.bg} alt="None"></img>
 			<MainNavigation />
 			<MobileNavigation />
@@ -29,7 +28,6 @@ function App() {
 			<Certifications />
 			<Divider />
 			<Contact />
-
 		</div>
 	</NavProvider>
 	);

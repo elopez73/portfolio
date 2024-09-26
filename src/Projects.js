@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-
 import CardActionArea from '@mui/material/CardActionArea';
 import Grow from '@mui/material/Grow';
 import { Grid2 } from '@mui/material';
@@ -21,12 +20,11 @@ export default function Projects() {
 		}
 	}, [currentNav])
 	return (
-		<section id="project" className="flex flex-col min-h-fit  gap-y-10 py-10">
+		<section id="project" className="flex flex-col min-h-fit  gap-y-10 py-10 ">
 			<Opening Name="Projects" p1="Current Projects" />
 			<Grid2 container spacing={4} justifyContent="center">
 				{projectData.map((project, index) => (
 					<Grid2 item key={index} size={{ xs: 10, md:3 }} >
-						{/* Apply the Grow animation to each card */}
 						<Grow in={checked} style={{ transformOrigin: '0 0 0' }} timeout={1000}>
 							<Card className='max-w-full shadow-2xl'>
 								<CardActionArea

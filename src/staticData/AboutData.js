@@ -10,6 +10,7 @@ import ex from "../assets/experience.jpg";
 import cp from "../assets/career.jpg";
 import sk from "../assets/skills.jpg"
 import hb from "../assets/hobbies.jpg"
+import js from "../assets/js.svg"
 
 const liscv = [
 	{
@@ -69,7 +70,7 @@ const iconLists = [
 	{ name: 'React/React Native', src: reacrNativeIcons },
 	{ name: 'Tailwind', src: TailwindIcon },
 	{ name: 'Typscript', src: TypscriptIcon },
-	{ name: 'Three.js', src: '/three.svg' },
+	{ name: 'Three.js', src: js },
 ];
 
 const lishb = [
@@ -141,14 +142,15 @@ export const slides = [
 	},
 	{
 		id: "5",
-		text: "Skills",
-		info1: <InfoWithIcons items={iconLists} />,
-		img: sk,
-	},
-	{
-		id: "6",
 		text: "Hobbies - Lifestyle",
 		info1: <InfoList li={lishb} />,
 		img: hb,
 	},
+	{
+		id: "6",
+		text: "Skills",
+		info1: <InfoWithIcons items={iconLists} />,
+		img: sk,
+	},
+
 ];

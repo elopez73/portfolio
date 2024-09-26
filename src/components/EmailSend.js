@@ -88,10 +88,11 @@ export default function EmailSend({ handleClose, showResult }) {
 				/>
 
 
-				<DialogActions className='bg-black justify-center'>
+				<DialogActions className='bg-black justify-center '>
 					<ReCAPTCHA
 						sitekey="6Ld5eg4kAAAAAFbDR9b-O3PS8j7bxWKlJkGukPFA"
 						onChange={onChange}
+						size='compact'
 						theme="dark"
 					/>
 				</DialogActions>

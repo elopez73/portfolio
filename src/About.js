@@ -20,12 +20,12 @@ export default function About() {
 			setChecked(false);
 		}
 	}, [currentNav]);
-	const gridSizes = [3, 4, 2, 4, 2, 3];
+	const gridSizes = [3, 4, 2, 4, 3, 2];
 
 
 
 	return (
-		<section id="about" className={"flex flex-grow flex-col min-h-fit gap-y-10 mb-10"}>
+		<section id="about" className={"flex flex-grow flex-col min-h-fit  gap-y-10 mb-10"}>
 			<Opening Name="About Me" p1="Discover what makes me tick" />
 
 			<Grid2 container spacing={4} justifyContent="center"  >
